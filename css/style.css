@@ -136,3 +136,12 @@ html {
     background-color: #FF136F;
 
 }
+
+.fa-ribbon:hover {
+    color: red;
+    transform: scale(1.5);
+
+
+}
+
+/* testimonials section */
