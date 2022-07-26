@@ -1,0 +1,54 @@
+/* small device */
+@media only screen and(max-width: 575px) {
+
+    .home-center h1 {
+        font-size: 3rem;
+    }
+
+    .home-center p {
+        font-size: 1rem;
+        /* overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; */
+
+    }
+
+    /* .home-btn {
+        display: block;
+
+    } */
+
+    /* .home-btn .btn-shop {
+        margin-top: 1rem;
+    }
+
+    .home-btn .btn-member {
+        margin-top: 1rem;
+    } */
+
+}
+
+/* medium device */
+@media only screen and(min-width: 576px) and (max-width: 767px) {
+    .home-center h1 {
+        font-size: 3rem;
+    }
+
+    .home-center p {
+        font-size: 1rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+    }
+
+    /* .home-btn .btn-shop {
+        margin-top: 1rem;
+    }
+
+    .home-btn .btn-member {
+        margin-top: 1rem;
+    } */
+
+}
+}

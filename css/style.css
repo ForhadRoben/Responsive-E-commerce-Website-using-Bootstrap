@@ -1,0 +1,83 @@
+* {
+    font-family: sans-serif;
+}
+
+/* menu section  */
+.navbar-brand-image img {
+    height: 50px;
+
+}
+
+.navbar-toggler-icon1 {
+    background-image: url(../images/menu.png) !important;
+
+}
+
+/* landing section  */
+#home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/hero_2.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+
+.home-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home-center h1 {
+    color: white;
+    font-size: 5rem;
+    /* font-weight: bold; */
+    /* font-weight: 500; */
+
+}
+
+.home-center p {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+/* .home-btn {
+    display: block;
+    transform-origin: 50%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+} */
+
+.home-btn .btn-shop {
+    padding: 1rem;
+    margin-top: 1rem;
+    color: white;
+    background-color: #FF136F;
+}
+
+.home-btn .btn-shop:hover {
+    color: aqua;
+    background: black;
+}
+
+.home-btn .btn-member {
+    color: white;
+    background-color: #FF136F;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.home-btn .btn-member:hover {
+    color: aqua;
+    background: black;
+}
