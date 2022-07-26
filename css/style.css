@@ -1,8 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: sans-serif;
 }
 
-/* menu section  */
+/* navbar section  */
 .navbar-brand-image img {
     height: 50px;
 
@@ -80,4 +84,55 @@
 .home-btn .btn-member:hover {
     color: aqua;
     background: black;
+}
+
+/* product section  */
+.hoverImg {
+    overflow: hidden;
+}
+
+.hoverImg img {
+    transition: 1s;
+}
+
+.hoverImg:hover img {
+    transform: scale(1.2);
+}
+
+.product-btn .btn-cart {
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    color: white;
+    background-color: #FF136F;
+
+}
+
+.product-btn .btn-cart:hover {
+    color: aqua;
+    background: black;
+    transition: 2s;
+}
+
+.product-btn .btn-view {
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    color: white;
+    background-color: #FF136F;
+
+}
+
+.product-btn .btn-view:hover {
+    color: aqua;
+    background: black;
+    transition: 2s;
+}
+
+/* services start  */
+
+.learnMore .btn-learn {
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    color: white;
+    background-color: #FF136F;
+
 }
