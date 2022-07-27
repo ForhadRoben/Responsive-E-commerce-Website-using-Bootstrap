@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop Now</title>
     <script src="https://kit.fontawesome.com/463e98b73c.js" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="font-awesome/css/fontawesome.css"> -->
     <link rel="shortcut icon" href="images/panda.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -19,7 +18,8 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-light bg-info fixed-top ">
             <div class="container-fluid">
-                <a class="navbar-brand navbar-brand-image" href="#"><img src="images/logo.png" alt="">
+                <a class="navbar-brand navbar-brand-image" href="#"><img src="images/e-commerce.webp" class="img-fluid"
+                        alt="">
 
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -44,7 +44,10 @@
                             <a class="nav-link text-white" href="#contact">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Sign In</a>
+                            <a class="nav-link text-white" href="#footer">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#modalSignIn" data-bs-toggle="modal">Sign In</a>
                         </li>
                     </ul>
                 </div>
@@ -58,15 +61,15 @@
             <div class="container">
                 <div class="row">
                     <div class="home-center ">
-                        <h1>Shop with us</h1>
+                        <h1>Get up to 30% Off</h1>
                         <p title="Atque a, explicabo necessitatibus
                         officia soluta earum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque a,
                             explicabo
                             necessitatibus
                             officia soluta earum.</p>
                         <div class="home-btn">
-                            <a href="#" class="btn btn-shop"> Shop Now</a>
-                            <a href="#" class="btn btn-member"> Member Now</a>
+                            <a href="#exampleModal" class="btn btn-shop" data-bs-toggle="modal"> Shop Now</a>
+                            <a href="#modalSignup" class="btn btn-member" data-bs-toggle="modal"> Member Now</a>
                         </div>
                     </div>
                 </div>
@@ -434,9 +437,166 @@
 
         </section>
         <!-- contact section end -->
-
-
     </main>
+    <!-- footer start  -->
+    <footer id="footer" class=" bg-black mt-4 ">
+        <section class="container ">
+            <div class="row text-center">
+                <div class="col-md-4 text-uppercase text-light mt-4 ">
+                    <h4 class="fw-bold">about us</h4>
+                    <h5>programmer</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque quo quidem laboriosam
+                        dicta, doloribus asperiores autem aliquid quia recusandae eos fugit officiis facere maiores
+                        voluptatum possimus id non fugiat.</p>
+                </div>
+                <div class="col-md-4  text-uppercase text-light mt-4">
+                    <h4 class="fw-bold">quick links</h4>
+                    <p class="mt-4"><a href="#product" class="text-decoration-none">Product</a></p>
+                    <p><a href="#services" class="text-decoration-none">Services</a></p>
+                    <p><a href="#testimonial" class="text-decoration-none">Testimonials</a></p>
+                    <p><a href="#contact" class="text-decoration-none">Contact</a></p>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <h4 class="fw-bold text-light">Follow Us</h4>
+                    <a href="" class="fa-2x"><i class=" fab fa-facebook"></i></a>
+                    <a href="" class="fa-2x ps-2"><i class=" fab fa-youtube-square"></i></a>
+                    <a href="" class="fa-2x ps-2"><i class="fab fa-instagram-square"></i></a>
+
+                </div>
+                <p class="text-light">Copy &copy; right by .....</p>
+            </div>
+
+        </section>
+
+    </footer>
+    <!-- footer end  -->
+    <!-- modal start  -->
+    <!-- Signup -->
+    <div class="modal" id="modalSignup">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <!-- <span>&times;</span> -->
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputfirstName" class="form-label">First name</label>
+                            <input type="text " class="form-control" id="inputfirstName" placeholder="First name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputlastName" class="form-label">Last name</label>
+                            <input type="text " class="form-control" id="inputlastName" placeholder="Last name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Enter Email">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">State</label>
+                            <select id="inputState" class="form-select">
+                                <option selected="">Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                </label>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Sign up</button>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- sign in  -->
+
+    <div class="modal fade " tabindex="-1" id="modalSignIn">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign In</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <!-- <span>&times;</span> -->
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputfirstName" class="form-label">First name</label>
+                            <input type="text " class="form-control" id="inputfirstName" placeholder="First name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputlastName" class="form-label">Last name</label>
+                            <input type="text " class="form-control" id="inputlastName" placeholder="Last name">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Enter Email">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Sign In</button>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Modal example-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal end  -->
 
 
 
